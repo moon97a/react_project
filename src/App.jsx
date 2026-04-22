@@ -2,11 +2,12 @@ import axios from "axios";
 
 
 function App() {
-  const URL = "http://localhost:3000/api/list";
+  // const URL = "http://localhost:3000/api/list";
+  const SERVER_URL ="/api/list"
   const getList = () => {
     console.log("목록 데이터 요청...");
 
-    axios.get(URL)
+    axios.get(SERVER_URL)
       .then((res) => {
         console.log("목록 데이터 응답:", res.data);
       })
